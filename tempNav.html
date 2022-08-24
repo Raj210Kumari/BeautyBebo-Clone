@@ -1,0 +1,52 @@
+<!-- all this will be added to navbar.html -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+</head>
+<body>
+    <div id="mainNav">
+        <!-- this will be added to navbar my cart button -->
+        <div id="mycart">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+    </div>
+    <div class="myCartPopUp1">
+        <div class="close_button1">&times;</div>
+        <hr>
+        <div>
+            <p>You have no items in your shopping cart</p>
+        </div>
+    </div>
+    <div class="myCartPopUp2">
+        <div class="close_button1">&times;</div>
+        <hr>
+        <div class="myCartItem">
+
+        </div>
+        <div>
+            <div>
+                <p>Cart Subtotal :</p>
+                <p>₹ 0.00</p>
+            </div>
+            <div>
+                <button><a href="./myCart.html">View Cart</a></button>
+                <button><a href="./checkout.html">Checkout</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/9561528a26.js" crossorigin="anonymous"></script>
+<script>
+    let cartpopUp=()=>{
+        let myCart=document.querySelector("mycart")
+        myCart.addEventListener("click",function (){
+            
+        })
+    }
+</script>
