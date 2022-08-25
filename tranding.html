@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a{
+            text-decoration: none;
+        }
+        #Home1{
+            display: flex;
+            gap: 5px;
+            background-color: whitesmoke;
+            width: 100%;
+            
+        }
+        #Home1 > p {
+            margin-left: 5px;
+        }
+        .cont1 > img{
+            width: 80%;
+            height: 510px;
+            margin-left: 10%;
+            /* border: 1px solid; */
+        }
+        .cont2{
+            display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(1,80px);
+       margin: auto;
+       gap: 20px;
+       width: 80%;
+       height: 70px;
+       /* border: 1px solid black; */
+       margin-top: 25px;
+        }
+       .cont2 > div {
+        width: 100%;
+       /* border: 1px solid red; */
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+       
+       } 
+       .cont2 > div > a > p {
+        text-decoration: none;
+        text-align: center;
+       font-size: xx-large;
+       margin-top: 25px;
+       }
+       .cont3{
+        margin-top: 10px;
+        display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(1,auto);
+       margin: auto;
+       gap: 30px;
+       width: 80%;
+       height: auto;
+       /* border: 1px solid black; */
+       margin-top: 25px;
+       margin-left: 8%;
+       }
+       .cont3 > div > img {
+        width: 100%;
+       }
+       .cont4 > img{
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        margin-top: 25px;
+       }
+      
+    </style>
+</head>
+<body>
+    <div id="Home1">
+        <p>Home</p>
+        <p>></p>
+        <p>Offers</p>
+    </div>
+    <div class="cont1">
+        <img src="https://www.beautybebo.com/pub/media/ads/imgpsh_fullsize_anim_2.jpg"/>
+    </div>
+    <div class="cont2">
+        <div><a href="./all.html"><p>Top Offer's</p></a></div>
+        <div><a href="./future.html"><p>Tranding Offer's</p></a></div>
+        <div><a href="./shopNow.html"><p>Future Brand's</p></a></div>
+        <div><a href="./tranding.html"><p>All Offer's</p></a></div>
+
+    </div>
+    <div class="cont3">
+        <div>
+            <a href="./all.html"><img src="https://www.beautybebo.com/pub/media/ads/vlcc-banner.jpg"/></a>
+        </div>
+        <div>
+           <a href="./future.html"> <img src="https://www.beautybebo.com/pub/media/ads/plum-banner.jpg"/></a>
+        </div>
+        <div>
+          <a href="./shopNow.html">  <img src="https://www.beautybebo.com/pub/media/ads/nivea-banner.jpg"/></a>
+        </div>
+        <div>
+           <a href="./tranding.html"> <img src="https://www.beautybebo.com/pub/media/ads/lakme-banner.jpg"/></a>
+        </div>
+        
+    </div>
+    <div class="cont4">
+        <img src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="">
+    </div>
+
+  
+</body>
+</html>
