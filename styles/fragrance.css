@@ -1,0 +1,56 @@
+*{
+    font-family: Roboto;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#fra{
+  height: 20px;
+  border: 1px solid black;
+  display: flex;
+  width: 86%;
+
+  margin: auto;
+  background-color: #f4ecec;
+  margin-bottom: 10px;
+  
+}
+#bigcon{
+    display: flex;
+    flex-direction: row;
+    width: 86%;
+    margin: auto;
+    border: 1px solid black;
+}
+#lecon{
+    width: 170px;
+    height: 460;
+    border: 1px solid blue;
+}
+#lef{
+    height: 170px;
+    width: 170px;
+    border-bottom: #f4ecec;
+    /* border: 1px solid black; */
+    line-height: 8px;
+    font-size: 14px;
+    color: gray;
+}
+#lef>p{
+    border-bottom: gray;
+}
+#nexpic{
+    height: 270px;
+    width: 170px;
+    border-bottom: #f4ecec;
+    /* border: 1px solid black; */
+}
+#nexpic>img{
+    height: 100%;
+    width: 100%;
+}
+#rigdivv{
+    height: 900px;
+    width: 80%;
+    margin-left: 20px;
+    border: 1px solid red;
+}
