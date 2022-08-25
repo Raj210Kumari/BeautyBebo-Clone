@@ -32,4 +32,12 @@
     
 </body>
 </html>
-<script ></script>
+<script type="module">
+    let main = document.getElementById("rigdivv")
+
+import {getData, appendData} from "./fragrance.js"
+
+let resp = await getData("./fragrance.json");
+console.log("respfrommodule", resp);
+appendData(resp, main)
+</script>
