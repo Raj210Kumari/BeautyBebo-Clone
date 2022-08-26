@@ -113,3 +113,11 @@
 .btnn:hover{
     cursor: pointer;
 }
+#bot{
+    width: 59%;
+    font-size: 12px;
+    border: 1px solid black;
+    color: gray;
+    /* margin: auto; */
+    margin-left: 31%;
+}
