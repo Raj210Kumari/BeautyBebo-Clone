@@ -5,7 +5,7 @@ const getData = async ( url )=>{
         let response = await fetch( url );
         // console.log( response );
         let data = await response.json();
-        data = data.Fragranceee ;
+        data = data.Ayurvedaa ;
         console.log("data", data);
         
         return data;
@@ -32,7 +32,6 @@ const appendData = (data, main)=>{
 
         let detail1 = document.createElement("h2");
         detail1.innerText = ele.detail;
-        detail1.setAttribute("class","detail");
 
         let price = document.createElement("h1");
         price.innerText ="₹"+ele.original;
