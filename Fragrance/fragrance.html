@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fragrance.css">
+</head>
+<body>
+    <div id="fra">
+        Fragrance
+    </div>
+    <div id="bigcon">
+        <div id="lecon">
+            <div id="lef">
+                <p>CATEGORY</p>
+                <h4>SHOP BY</h4>
+                <P>SKIN TYPe</P>
+                <p>PRICE</p>
+                <p>BRANDS</p>
+                <p>SHADES</p>
+            </div>
+            <div id="nexpic">
+                <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="rigdivv"></div>
+        
+
+    </div>
+    
+</body>
+</html>
+<script type="module">
+    let main = document.getElementById("rigdivv")
+
+import {getData, appendData} from "./fragrance.js"
+
+let resp = await getData("./fragrance.json");
+console.log("respfrommodule", resp);
+appendData(resp, main)
+</script>
