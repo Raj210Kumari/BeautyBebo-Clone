@@ -9,8 +9,8 @@
     #cartContainer{
         
         display: flex;
-        width: 60%;
-        margin-left: 20%;
+        width: 80%;
+        margin-left: 10%;
     }
     #leftContainer{
         /* background-color: aqua; */
@@ -44,15 +44,34 @@
         
     }
     .leftFirstRowDiv2{
-        width: 46.5%;
+        width: 55%;
         margin-left: 20px;
     }
     .leftFirstRowDiv3{
         display: flex;
+        width: 30%;
         gap: 50px;
     }
     .leftSecondRow{
         margin-top:10px ;
+    }
+    .leftFirstRowDiv3Child3{
+        margin-left: 20px;
+    }
+    select{
+        margin-top: 17px;
+    }
+    #bottomDiv{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    button{
+        margin-top: 10px;
+    }
+    .leftFirstRowDiv3Child2>input{
+        margin-top: 16px;
+        width: 20px;
     }
 </style>
 <body>
@@ -82,11 +101,77 @@
             <div id="leftContainerData">
 
             </div>
+            <div id="bottomDiv">
+                <button><a href="./index.html">CONTINUE SHOPPING</a></button>
+                <button onclick="updateQTY()" id="updateQtyValue">UPDATE SHOPPING CART</a></button>
+            </div>
         </div>
         <div id="rightContainer">
             <h2>SUMMARY</h2>
-
-
+            <button>ESTIMATE SHIPPING AND TAX</button>
+            <form>
+                <p>Enter your destination to get a shipping estimate.</p>
+                <div>
+                    <span>Country</span>
+                    <div>
+                        <select>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span>State</span>
+                    <div>
+                        <select>
+                            <option>Delhi</option>
+                            <option>Mumbai</option>
+                            <option>Kolkata</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span>Zip/Postal Code</span>
+                    <div>
+                        <input type="number" placeholder="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Best Way</h5>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <p>Max 7 Business days ₹0.00</p>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <div>
+                    <div>Subtotal</div>
+                    <div id="subtotalAmount">₹</div>
+                </div>
+                <div>
+                    <div>Shipping (Best Way - Max 7 Business days)</div>
+                    <div>₹0.00</div>
+                </div>
+                <div>
+                    <div>Order Total Incl. GST</div>
+                    <div id="total">₹</div>
+                </div>
+            </div>
+            <button>ESTIMATE SHIPPING AND TAX</button>
+            <div>
+                <span>APPLY DISCOUNT CODE</span>
+                <div>
+                    <input type="number" placeholder="Enter discount code">
+                </div>
+                <button>APPLY DISCOUNT</button>
+            </div>
+            <div>
+                <button><a href="./checkout.html">PROCEED TO CHECKOUT</a></button>
+            </div>
         </div>
     </div>
 </body>
