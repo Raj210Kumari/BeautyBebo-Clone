@@ -5,7 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
 </head>
+<style>
+    *{
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    #checkoutShippingContainer{
+        width: 80%;
+        margin-left: 10%;
+        gap: 20px;    
+    }
+    #shipping_image{
+        border-bottom: 1px solid rgb(180, 180, 180);
+        /* max-width: 20px; */
+        width: 63%;
+        margin-bottom: 20px;
+    }
+    #checkboxIcon{
+        display: flex;
+        justify-content: end;
+        margin-top: none;
+        margin-right: none;width: 100%;
+      
+    }
+    #checkboxIcon>img{
+        height: 50px;
+        width: 50px;
+    }
+    #shippingDetails{
+        width: 65%;
+    }
+    #shoppingDetails{
+        border: 2px solid #dd0285 !important;
+       
+    }
+    #cartDetails{
+        display: flex;
+        gap: 30px;
+    }
+    #orderSummaryDetails{
+        border: 1px solid gray;
+        width: 35%;
+    }
+    #input_field{
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid rgb(180, 180, 180);
+    }
+    #nextPage{
+        display: flex;
+        justify-content: end; 
+    }
+    #nextPage>button{
+        width: 70px;
+    }
+    #personDetails{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        /* font-weight: none; */
+        font-family: 'icons-blank-theme';
+        font-family: 'icons-blank-theme';
+    }
+   button{
+    margin-top: 20px;
+    height: 40px;
+    width: auto;
+    font-size: 14px;
+    background-color: #444444;
+    border: none;
+    color: #fff;
+   }
+   a{
+    text-decoration: none;
+    color: #fff;
+   }
+</style>
 <body>
-    
+    <div>
+        <div id="checkoutShippingContainer">
+            <div id="shipping_image">
+                <img src="./img/checkout1.png">
+                <h1>Shipping Address</h1>
+            </div>
+            <div id="cartDetails">
+                
+                <div id="shippingDetails">
+                    <div id="shoppingDetails">
+                        <div>
+                            <div id="checkboxIcon">
+                                <img src="./img/checkout2.png">
+                            </div>
+                            <div id="personDetails">
+                                <p>Rajnandani Kumari <br>
+                                Kali Talla, Near- Kali Mandir<br>
+                                Mihijam, Jharkhand 815354<br>
+                                India<br>
+                                07979735005<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href="./account">NEW ADDRESS</a></button>
+                    </div>
+                    <div>
+                        <div>
+                            <h2>Delivery Charges</h2>
+                        </div>
+                        <div id="input_field">
+                            <input type="radio">
+                            <p>Max & Bussiness Days</p>
+                        </div>
+                    </div>
+                    <div id="nextPage">
+                        <button><a href="./payment.html">Next</a></button>
+                    </div>
+                </div>
+                <div id="orderSummaryDetails">
+                    <div>
+                        <h2>ORDER SUMMARY</h2>
+                    </div>
+                    <div>
+                        <h2>3 Items in Cart</h2>
+                    </div>
+                    <div id="cartProductContainer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
 </body>
 </html>
