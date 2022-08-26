@@ -30,10 +30,10 @@ const appendData = (data, main)=>{
         image1.src = ele.image;
         image1.style.width= '100%' ;
 
-        let detail1 = document.createElement("p");
+        let detail1 = document.createElement("h2");
         detail1.innerText = ele.detail;
 
-        let price = document.createElement("h4");
+        let price = document.createElement("h1");
         price.innerText ="₹"+ele.original;
         price.setAttribute("class","pr")
         
@@ -47,7 +47,7 @@ const appendData = (data, main)=>{
         // discon.innerText="₹"+ele.discount;
         // discon.setAttribute("class","discounted");
 
-        let starrr=document.createElement("p");
+        let starrr=document.createElement("h2");
         starrr.innerText=ele.star;
         starrr.setAttribute("class", "str");
 

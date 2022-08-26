@@ -5,9 +5,9 @@
 
 #fra{
   height: 20px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
-  width: 86%;
+  width: 80%;
 
   margin: auto;
   background-color: #f4ecec;
@@ -17,30 +17,38 @@
 #bigcon{
     display: flex;
     flex-direction: row;
-    width: 86%;
+    width: 80%;
     margin: auto;
     border: 1px solid black;
 }
 #lecon{
-    width: 170px;
+    width: 230px;
     height: 460;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 #lef{
     height: 170px;
     width: 170px;
     border-bottom: #f4ecec;
     /* border: 1px solid black; */
-    line-height: 8px;
+    line-height: 11px;
     font-size: 14px;
     color: gray;
+    
 }
 #lef>p{
+    margin-left: 20px;
     border-bottom: gray;
+}
+#lef>p:hover{
+    cursor: pointer;
+}
+#lef>h4{
+    margin-left: 20px;
 }
 #nexpic{
     height: 270px;
-    width: 170px;
+    width: 230px;
     border-bottom: #f4ecec;
     /* border: 1px solid black; */
 }
@@ -52,22 +60,23 @@
     height: auto;
     width: 80%;
     margin-left: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #rigdivv{
     width: 100%;
     /* border: 1px solid rgb(54, 18, 215); */
-    margin-top: 20px;
+    /* margin-top: 20px; */
    
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-gap: 10px; */
 }
 #rigdivv>div{
+    
     padding: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 0.5px solid rgb(207, 204, 204);
-    border-radius: 15px;
+    border: 0.2px solid rgb(207, 204, 204);
+    /* border-radius: 15px; */
     gap:10px;
     height: 300px;
     /* line-height: 10px; */
@@ -81,4 +90,26 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.pr{
+    margin: center;
+    color: #dd0285;
+}
+.detail{
+    justify-content: center;
+    margin: justify;
+}
+.btnn{
+    margin: auto;
+    /* padding-left: 100px;
+    padding: 6px; */
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: #dd0285;
+}
+.btnn:hover{
+    cursor: pointer;
 }
