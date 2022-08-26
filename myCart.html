@@ -5,7 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Cart</title>
 </head>
+<style>
+    #cartContainer{
+        
+        display: flex;
+        width: 60%;
+        margin-left: 20%;
+    }
+    #leftContainer{
+        /* background-color: aqua; */
+        width: 70%;
+        padding-right: 20px;
+    }
+    #rightContainer{
+        background-color: gainsboro;
+        border: 2px solid rgb(174, 172, 172);
+        width: 30%;
+        text-align: center;
+    }
+    #tableTag{
+        border-bottom: 2px solid rgb(174, 172, 172);
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    span{
+        margin-left: 30px;
+    }
+    .leftFirstRow{
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid gainsboro;
+    }
+    .leftFirstRowDiv1{
+        width: 20%;
+        border: 0.5px solid gainsboro;
+        
+    }
+    .leftFirstRowDiv2{
+        width: 46.5%;
+        margin-left: 20px;
+    }
+    .leftFirstRowDiv3{
+        display: flex;
+        gap: 50px;
+    }
+    .leftSecondRow{
+        margin-top:10px ;
+    }
+</style>
 <body>
-    
+    <div id="cartContainer">
+        <div id="leftContainer">
+            <div id="tableTag">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>ITEM</span>
+                            </th>
+                            <th>
+                                <span>PRICE</span>
+                            </th>
+                            <th>
+                                <span>QTY</span>
+                            </th>
+                            <th>
+                                <span>SUBTOTAL</span>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!-- here data will be append -->
+            <div id="leftContainerData">
+
+            </div>
+        </div>
+        <div id="rightContainer">
+            <h2>SUMMARY</h2>
+
+
+        </div>
+    </div>
 </body>
 </html>
+<script src="./myCart.js"></script>
