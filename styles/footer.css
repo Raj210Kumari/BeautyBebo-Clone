@@ -1,0 +1,78 @@
+.cont5 {
+    margin-top: 10px;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(1,300px);
+   margin: auto;
+   gap: 20px;
+   width: 100%;
+   height: auto;
+   border: 1px solid black;
+   margin-top: 25px;
+   background-color: black;
+   }
+   .cont5 > div {
+    border: 1px solid black;
+    margin-left: 15%;
+   }
+   .cont5 > div > a > h3{
+    color: white;
+   }
+   .cont5 > div > a > p{
+    color: white;
+   }
+   .cont5 > div > p{
+    color: white;
+   }
+   .cont6{
+        display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(1,80px);
+   margin: auto;
+   gap: 20px;
+   width: 100%;
+   background-color: black;
+   border: 1px solid black;
+   /* margin-top: 25px; */
+    }
+   .cont6 > div {
+    width: 100%;
+   /* border: 1px solid red; */
+   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;; */
+   
+   } 
+   .cont6 > div > img {
+    margin-top:17px;
+   }
+   .end-flex{
+    display: flex;
+    gap: 10px;
+   
+   }
+   .end-flex > input{
+    width: 60%;
+    height:50px;
+    margin-top: 15px;
+   }
+   .end-flex > button {
+    color: white;
+    background-color: rgb(190, 42, 67);
+    height:50px;
+    margin-top: 15px;
+   
+   }
+   .end-flex > h3{
+    color: white;
+    margin-top: 25px;
+   }
+   a{
+    text-decoration: none;
+   }
+   .cont7{
+    text-align: center;
+    border: 1px solid;
+    height: 40px;
+    color: white;
+    background-color: black;
+    width: 100%;
+   }

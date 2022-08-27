@@ -5,272 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Customer Login Beautybebo</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            /* background-color: #f2f2f2; */
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #login_page_box {
-            display: flex;
-
-        }
-
-      
-
-
-        #sign_up_with {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column: 1, auto;
-            gap: 20px;
-            background-color: #FFFFFF;
-
-        }
-
-        .sign_up_social {
-            border: 1px solid transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* padding: 3px 0; */
-            font-size: 14px;
-            background-color:  #3b5998;;
-            color:white;
-            font-family: 'Roboto',sans-serif;
-        }
-        .sign_up_social1 {
-            border: 1px solid transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* padding: 3px 0; */
-            font-size: 14px;
-            background-color: #dd4b39;
-            color:white;
-            font-family: 'Roboto',sans-serif;
-        }
-        
-
-
-        .sign_up_social>img {
-            width: 30px;
-            
-            margin-right: 18px;
-        }
-        .sign_up_social1>img {
-            width: 30px;
-            
-            margin-right: 18px;
-        }
-
-        /* .hr_line {
-            width: 100%;
-            top: 20px;
-            border: none;
-            height: 2px;
-            margin-top: 10px;
-            color: #f2f2f2;
-        } */
-
-        #signup-form-div {
-            width: 550px;
-            padding: 32px;
-            margin: auto;
-            margin-top: 50px;
-            padding: 35px 30px;
-            border-radius: 10px;
-            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
-            border:0.5px solid #999;
-            background-color: #ffff;
-            margin-bottom: 80px;
-            margin-right: 15px;
-        }
-
-        #new_costomer {
-            width: 550px;
-            height:440px;
-            padding: 32px;
-            margin: auto;
-            margin-top: 50px;
-            padding: 35px 30px;
-            /* background-color: #FFFFFF; */
-            border:0.5px solid #999;
-            margin-left: 15px;
-            border-radius: 10px;
-            
-        }
-
-        #new_costomer h3 {
-            /* text-align: center; */
-            margin-bottom: 30px;
-            /* background-color: #FFFFFF; */
-            /* margin-top: 40px; */
-            color: #222;
-            display: block;
-            font-weight: 700;
-            padding-bottom: 5px;
-            text-transform: uppercase;
-        }
-
-        #signup-form-div> h4{
-            text-align: center;
-            margin-bottom: 30px;
-            background-color: #FFFFFF; 
-             margin-top: 40px;
-            font-family: Roboto;
-            font-size: 20px;
-            color: #666666;
-        }
-        #signup-form-div> h3 {
-         
-              /* text-align: center; */
-              margin-bottom: 30px;
-            /* background-color: #FFFFFF; */
-            /* margin-top: 40px; */
-            color: #222;
-            display: block;
-            font-weight: 700;
-            padding-bottom: 5px;
-            text-transform: uppercase;
-           
-        }
-        
-        
-
-        input[type=text],
-        input[type=number],
-        input[type=email],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-         
-            border:0.5px solid #999;
-            /* border-radius: 5px; */
-            background-color: #FFFFFF;
-        }
-
-        
-        #new_costomer_reg {
-            width: 60%;
-            height: 40px;
-            display: block;
-            /* margin: auto; */
-            border:none ! important;
-
-            cursor: pointer;
-            background-color: #444;
-            color:#FFFFFF !important;
-            /* border:0.5px solid #999; */
-            line-height:35px;
-            font-size: 100% !important;
-            font-weight: 400;
-
-        }
-        #new_costomer>p{
-            display:block;
-            margin-block-start:1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-family:Roboto;
-            font-size:14px;
-            color:#666666;
-            line-height:1.66;
-            margin-bottom:40px;
-        }
-        #p{
-            display:block;
-            margin-block-start:1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-family:Roboto;
-            font-size:14px;
-            color:#666666;
-            line-height:1.66;
-            margin-bottom:40px
-
-        }
-        #submit{
-            width: 25%;
-            height: 40px;
-            display: block;
-            /* margin: auto; */
-            cursor: pointer;
-            background-color: #444;
-      
-            /* border:0.5px solid #999; */
-           
-            font-weight: 600px;
-            font-family: 'Roboto',sans-serif;
-          
-        
-            color:#FFFFFF !important;
-            /* border:0.5px solid #999; */
-            line-height:35px;
-            font-size: 100% !important;
-            font-weight: 400;
-
-
-        }
-        #new_costomer_reg:hover {
-            background-color: #dd0285;
-            color:white;
-            font-family: 'Roboto',sans-serif;
-            cursor: pointer;
-           
-
-        }
-
-       
-        #submit:hover{
-            background-color: #dd0285;
-            color:white;
-            font-family: 'Roboto',sans-serif;
-            cursor: pointer;
-
-        }
-
-        .sign_up_social:hover {
-          background-color: rgb(12, 12, 117);
-            cursor: pointer;
-
-        }
-        .sign_up_social1:hover {
-          background-color:#df240b;
-            cursor: pointer;
-
-        }
-
-        .int_txt {
-            font-size: 14px;
-            font-weight: 300;
-        }
-
-        .t_d {
-            color: #333333;
-            font-weight: 500;
-        }
-        
-       
-    </style>
+    
 </head>
 
 <body>
-    <div id="reg_page_navbar" onclick="myhome()">
-      
+    <div id="navbar">
+
     </div>
-    
-
-
-
     <div id="login_page_box">
         <div id="signup-form-div">
             <div id="sign_up_with">
@@ -310,69 +55,18 @@
         <div id="new_costomer">
             <h3>NEW CUSTOMERS</h3>
             <p>Creating an account has many benefits:check out faster, keep more than one address, track orders and more</p>
-            <button id="new_costomer_reg" onclick="Register()">CREATE AN ACCOUNT</button>
+            <button id="new_costomer_reg" >CREATE AN ACCOUNT</button>
         </div>
 
 
     </div>
+    <div id="footer">
 
-
-
-
+    </div>
 </body>
 
 </html>
 
 
-<script>
-    let user = JSON.parse(localStorage.getItem("userData"))
-    document.querySelector("#submit").addEventListener("click", mySignIn);
-
-
-
-    function mySignIn(event) {
-        event.preventDefault();
-        let data = {
-            user_email: document.querySelector("#user_Email").value,
-            user_Password: document.querySelector("#user_Password").value
-        };
-
-
-        function checkLogin(user_email, user_Password) {
-            let filter = user.filter(function (elem) {
-                return elem.email == user_email && elem.password == user_Password
-            });
-
-
-            if (filter.length > 0) {
-                return filter;
-            } else {
-                return false;
-            }
-        }
-
-        let current_user = checkLogin(data.user_email, data.user_Password);
-
-
-        if (current_user == false) {
-            alert("invalid Credentials");
-        } else {
-            localStorage.setItem("loginData", JSON.stringify(current_user));
-            alert("Login Success....!")
-            window.location.href = "";
-        }
-
-
-    }
-
-    function myhome(){
-        window.location.href=""
-    }
-
-
-    function Register(){
-        window.location.href=""
-    }
-
-
-</script>
+<script src="./script/login.js" type="module"></script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>></script>

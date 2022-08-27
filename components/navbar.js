@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>beauty bebo</title>
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
+let navbar=()=>{
+    return `
     <div id="ba">
-        <img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="">
+        <a href="../shopNow.html"><img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt=""></a>
     </div>
     
    <div id="fixed_nav">
@@ -282,10 +274,10 @@
                         
                     </div>
                 </li>
-                <li><a href="">FRAGRANCE</a>
+                <li><a href="./Fragrance/fragrance.html">FRAGRANCE</a>
                     <div>
                         <ul>
-                            <li><a href="">Perfumes</a>
+                            <li><a href="./Fragrance/Ayurveda.html">Perfumes</a>
                             <li><a href="">Deodorants roll ons</a>
                             <li><a href="">Body Mist/Spray</a>
                             
@@ -352,59 +344,59 @@
                     </div>
                 </li>
                 <li><a id="mycart"><i class="fa-solid fa-bag-shopping"></i>My Cart</a>
-                    <p id="bagcount" style="display: none;">5</p>
-                </li>                
-        </div>
+                <p id="bagcount" style="display: none;">5</p>
+            </li>         
+</div>
+</div>
+<div class="myCartPopUp1">
+    <div class="close_button1">&times;</div>
+    <hr>
+    <div>
+        <p>You have no items in your shopping cart</p>
     </div>
-    <div class="myCartPopUp1">
-        <div class="close_button1">&times;</div>
-        <hr>
-        <div>
-            <p>You have no items in your shopping cart</p>
-        </div>
-    </div>
-    <div class="myCartPopUp2">
-        <div class="close_button2">&times;</div>
-        <hr>
-        <div class="myCartItem">
+</div>
+<div class="myCartPopUp2">
+    <div class="close_button2">&times;</div>
+    <hr>
+    <div class="myCartItem">
 
-        </div>
+    </div>
+    <div>
         <div>
-            <div>
-                <p>Cart Subtotal :</p>
-                <p>₹ 0.00</p>
-            </div>
-            <div id="detailPageButton">
-                <button><a href="./myCart.html">View Cart</a></button>
-                <button><a href="./checkout.html">Checkout</a></button>
-            </div>
+            <p>Cart Subtotal :</p>
+            <p>₹1293.00</p>
+        </div>
+        <div id="detailPageButton">
+            <button id="loginViewCart"><a href="./myCart.html">View Cart</a></button>
+            <button id="loginCheckoutCart"><a href="./checkout.html">Checkout</a></button>
         </div>
     </div>
-   
-  
-</body>
-</html>
-<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>
-<script>
-    let cartpopUp=()=>{
+</div>
+`
+};
+
+
+
+let cartpopUp=()=>{
+    
+let myCart=document.querySelector("#mycart")
+myCart.addEventListener("click",function (){
+    if(bagcount.innerText==="0"){
+        document.querySelector(".myCartPopUp1").classList.add("active")
         
-        let myCart=document.querySelector("#mycart")
-        myCart.addEventListener("click",function (){
-            if(bagcount.innerText==="0"){
-                document.querySelector(".myCartPopUp1").classList.add("active")
-                
-            }else{
-                document.querySelector(".myCartPopUp2").classList.add("active")
-                console.log("working")
-            }
-        })
-        document.querySelector(".close_button1").addEventListener("click", function () {
-        document.querySelector(".myCartPopUp1").classList.remove("active");
-    });
-    document.querySelector(".close_button2").addEventListener("click", function () {
-        document.querySelector(".myCartPopUp2").classList.remove("active");
-    });
+    }else{
+        document.querySelector(".myCartPopUp2").classList.add("active")
+        console.log("working")
     }
+})
+document.querySelector(".close_button1").addEventListener("click", function () {
+document.querySelector(".myCartPopUp1").classList.remove("active");
+});
+document.querySelector(".close_button2").addEventListener("click", function () {
+document.querySelector(".myCartPopUp2").classList.remove("active");
+});
+}
 
-    cartpopUp()
-</script>
+
+// cartpopUp()
+export {navbar,cartpopUp} ;

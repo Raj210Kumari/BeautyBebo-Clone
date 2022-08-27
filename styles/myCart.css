@@ -1,0 +1,100 @@
+#cartContainer{
+        
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+#leftContainer{
+    /* background-color: aqua; */
+    width: 70%;
+    padding-right: 20px;
+}
+#rightContainer{
+    background-color: grgb(180, 180, 180);
+    border: 2px solid rgb(174, 172, 172);
+    width: 30%;
+    text-align: center;
+}
+#tableTag{
+    border-bottom: 2px solid rgb(174, 172, 172);
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+span{
+    margin-left: 30px;
+}
+.leftFirstRow{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(180, 180, 180);
+}
+.leftFirstRowDiv1{
+    width: 20%;
+    border: 0.5px solid rgb(180, 180, 180);
+    
+}
+.leftFirstRowDiv2{
+    width: 55%;
+    margin-left: 20px;
+}
+.leftFirstRowDiv3{
+    display: flex;
+    width: 30%;
+    gap: 50px;
+}
+.leftSecondRow{
+    margin-top:10px ;
+}
+.leftFirstRowDiv3Child3{
+    margin-left: 20px;
+}
+select{
+    margin-top: 17px;
+}
+#bottomDiv{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+button{
+    margin-top: 10px;
+}
+.leftFirstRowDiv3Child2>input{
+    margin-top: 16px;
+    width: 20px;
+}
+#navbar{
+    margin-bottom: 20px;
+}
+#ContShopping,#updateQtyValue,#proToCheck{
+            width: 30%;
+            height: 40px;
+            display: block;
+            /* margin: auto; */
+            border:none ! important;
+
+            cursor: pointer;
+            background-color: #dd0285;
+            color:#FFFFFF !important;
+            /* border:0.5px solid #999; */
+            line-height:35px;
+            font-size: 100% !important;
+            font-weight: 400;
+}
+#ContShopping>a, #proToCheck>a{
+    color: fff;
+}
+#ContSHopping:hover,#updateQtyValue:hover, #proToCheck:hover{
+    
+    background-color: #444;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+           
+}
+#proToCheckDiv>button{
+    width: 94%;
+    margin-left: 3%;
+}
