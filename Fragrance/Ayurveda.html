@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./comman.css">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="fra">
+        Ayurveda
+    </div>
+    <div id="bigcon">
+        <div id="lecon">
+            <div id="lef">
+                <p>CATEGORY</p>
+                <h4>SHOP BY</h4>
+                <P>SKIN TYPe</P>
+                <p>PRICE</p>
+                <p>BRANDS</p>
+                <p>SHADES</p>
+            </div>
+            <div id="nexpic">
+                <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="rigdivv"></div>
+        
+
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+<script type="module">
+    let main = document.getElementById("rigdivv")
+
+import {getData, appendData} from "./Ayurveda.js"
+
+let resp = await getData("./Ayurveda.json");
+console.log("respfrommodule", resp);
+appendData(resp, main)
+</script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>></script>

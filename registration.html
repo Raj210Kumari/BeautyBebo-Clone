@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title> Create New Customer Account Beauty Bebo</title>
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+         background-color:white; 
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+
+      
+
+        .h2_txt {
+             
+            /* margin-bottom: 30px; */
+          
+            color: #333333;
+            display: block;
+            font-weight: 700;
+            /* padding-bottom: 5px; */
+            text-transform: uppercase;
+        }
+
+        #sign_up_with {
+            width: 35%;
+            display: grid;
+            margin:auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 1, auto;
+            gap: 5px;
+            background-color: #FFFFFF;
+
+        }
+
+        .sign_up_social {
+            border: 1px solid transparent;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 3px 0; */
+            font-size: 14px;
+            background-color:  #3b5998;;
+            color:white;
+            font-family: 'Roboto',sans-serif;
+            border-radius: 5px;
+        }
+        .sign_up_social1 {
+            border: 1px solid transparent;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 3px 0; */
+            font-size: 14px;
+            background-color:  #dd4b39;
+            color:white;
+            font-family: 'Roboto',sans-serif;
+            border-radius: 5px;
+        }
+
+        .sign_up_social>img {
+            width: 35px;
+            
+            margin-right: 50px;
+        }
+        .sign_up_social1>img {
+            width: 35px;
+            
+            margin-right: 30px;
+        }
+
+      
+
+        #signup-form-div {
+            width: 600px;
+            padding: 32px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 35px 30px;
+            
+            border:0.5px solid #999;
+            background-color: #fafafa;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+        }
+
+        #signup-form-div h3 {
+           
+            margin-bottom: 10px;     
+            color:#444;
+            font-family: Roboto;
+            background-color: #fafafa;
+            text-transform: uppercase;
+            font-weight:500 !important;
+            font-size:130.6% !important;
+           
+        }
+        #h3{
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight:500 !important;
+            color:#444;
+            font-size:130.6% !important;
+            text-transform: uppercase;
+            margin-top: 40px;
+            
+            
+        }
+        #h31{
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #FFFFFF;
+            margin-top: 40px;
+            color:grey;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 11px 15px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border:0.5px solid #999;
+           
+            background-color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        #submit {
+           
+
+            border: none !important;
+             overflow: visible;
+            display: inline-block;
+            background: #444;
+            width: auto;
+            margin-top:20px;
+            cursor: pointer;
+            height: 35px;
+            line-height: 35px;
+            white-space: nowrap;
+            font-size: 100% !important;
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            padding: 0 20px !important;
+            color: #fff !important;
+            text-decoration: none !important;
+
+        }
+
+        #submit:hover {
+            background-color: #dd0285;
+            color: #333333;
+
+
+        }
+
+        .sign_up_social1:hover {
+            background-color:#df240b;
+            cursor: pointer;
+
+        }
+        .sign_up_social:hover {
+            background-color: rgb(12, 12, 117);
+            cursor: pointer;
+
+        }
+
+        .int_txt {
+            font-size: 14px;
+            font-weight: 300;
+            background-color: #fafafa;
+            padding:5px;
+         
+        }
+     
+        #pa{
+            background-color: #fafafa;
+            padding-bottom:20px;
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div>
+        <div id="reg_page_navbar" onclick="myhome()">
+            
+        </div>
+        <h3 id="h3">CREATE NEW CUSTOMER ACCOUNT</h3>
+
+        
+        <div id="sign_up_with">
+            <div class="sign_up_social"><img
+                    src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-logo-facebook-icon-png-image_3566127.png"
+                    alt="error"> Facebook</div>
+            <div class="sign_up_social1"><img
+                    src="https://icon-library.com/images/download-google-icon/download-google-icon-25.jpg" alt="error">
+                Google</div>
+        </div>
+        <h3 id="h31">-- OR --</h3>
+
+
+
+        <div id="signup-form-div">
+        <h3>PERSONAL INFORMATION</h3>
+
+        <hr class="hr_line">
+        
+        <label for="name"id="pa">Full Name *</label>
+        <input type="text" placeholder="" id="name"><br><br>
+        
+
+        <label for="email"id="pa">Email *</label>
+        <input type="email" placeholder="" id="email"><br><br>
+
+        <label for="contact" id="pa">Phone *</label>
+        <input type="number" placeholder="" id="contact">
+       
+
+
+        <label for="password" id="pa">Password *</label>
+        <input type="password" placeholder="" id="password">
+        <p class="int_txt">Password Strength: No Password</p><br><br>
+
+
+        <label for="password" id="pa">Confirm Password *</label>
+        <input type="password" placeholder="" id="referral">
+        
+
+
+        <button id="submit">Create An Account</button>
+       
+
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script type="module">
+    import {navbar,cartpopUp} from "../components/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar()
+
+    import{footer} from "../components/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+    cartpopUp()
+
+    document.querySelector("#submit").addEventListener("click", mySignup);
+    let dataArr = JSON.parse(localStorage.getItem("userData")) || [];
+
+
+    function mySignup(event) {
+        event.preventDefault();
+        let dataObj = {
+            name: document.querySelector("#name").value,
+            contact: document.querySelector("#contact").value,
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#password").value
+        };
+
+        if (checkFilled() == true) {
+            if (checkEmail(dataObj.email) == true) {
+                dataArr.push(dataObj);
+                localStorage.setItem("userData", JSON.stringify(dataArr));
+                alert("Welcome..🎉.. Please login...!");
+                window.location.href = "login.html";
+
+            } else {
+                alert("Account Already Exists.. Please login...!");
+                window.location.href = "login.html";
+            }
+        } else {
+            alert("Please Enter All The Details")
+        }
+
+
+
+
+
+        function checkEmail(email) {
+            let filtered = dataArr.filter(function (elem) {
+                return email === elem.email;
+            });
+            if (filtered.length > 0) {
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+
+
+
+        function checkFilled() {
+            if (dataObj.name == "" || dataObj.contact == "" || dataObj.email == "" || dataObj.password == "") {
+                return false
+            } else {
+                return true
+
+            }
+        }
+
+
+    }
+
+
+    function myhome() {
+        window.location.href = "./navbar.html"
+    }
+</script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>></script>

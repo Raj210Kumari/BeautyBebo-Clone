@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/myCart.css">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>View Cart</title>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="cartContainer">
+        <div id="leftContainer">
+            <div id="tableTag">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>ITEM</span>
+                            </th>
+                            <th>
+                                <span>PRICE</span>
+                            </th>
+                            <th>
+                                <span>QTY</span>
+                            </th>
+                            <th>
+                                <span>SUBTOTAL</span>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!-- here data will be append -->
+            <div id="leftContainerData">
+
+            </div>
+            <div id="bottomDiv">
+                <button id="ContShopping"><a href="./index.html">CONTINUE SHOPPING</a></button>
+                <button onclick="updateQTY()" id="updateQtyValue">UPDATE SHOPPING CART</a></button>
+            </div>
+        </div>
+        <div id="rightContainer">
+            <h2>SUMMARY</h2>
+            <button>ESTIMATE SHIPPING AND TAX</button>
+            <form>
+                <p>Enter your destination to get a shipping estimate.</p>
+                <div>
+                    <span>Country</span>
+                    <div>
+                        <select>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span>State</span>
+                    <div>
+                        <select>
+                            <option>Delhi</option>
+                            <option>Mumbai</option>
+                            <option>Kolkata</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span>Zip/Postal Code</span>
+                    <div>
+                        <input type="number" placeholder="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Best Way</h5>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <p>Max 7 Business days ₹0.00</p>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <div>
+                    <div>Subtotal</div>
+                    <div id="subtotalAmount">₹</div>
+                </div>
+                <div>
+                    <div>Shipping (Best Way - Max 7 Business days)</div>
+                    <div>₹0.00</div>
+                </div>
+                <div>
+                    <div>Order Total Incl. GST</div>
+                    <div id="total">₹</div>
+                </div>
+            </div>
+            <button>ESTIMATE SHIPPING AND TAX</button>
+            <div>
+                <span>APPLY DISCOUNT CODE</span>
+                <div>
+                    <input type="number" placeholder="Enter discount code">
+                </div>
+                <button>APPLY DISCOUNT</button>
+            </div>
+            <div id="proToCheckDiv">
+                <button id="proToCheck"><a href="./checkout.html">PROCEED TO CHECKOUT</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+<script src="./script/myCart.js" type="module"></script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>
