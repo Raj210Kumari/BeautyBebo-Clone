@@ -53,6 +53,7 @@ const appendData = (data, main)=>{
 
         let btn=document.createElement("button");
         btn.innerText="Add to Cart"
+        
         btn.setAttribute("class", "btnn");
 
 
