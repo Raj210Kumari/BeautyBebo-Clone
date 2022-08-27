@@ -1,3 +1,10 @@
+import{navbar} from "../components/navbar.js"
+document.getElementById("navbar").innerHTML=navbar()
+
+import{footer} from "../components/footer.js"
+document.getElementById("footer").innerHTML=footer()
+
+
 let cartItem=[{
     "Img":"https://www.beautybebo.com/pub/media/catalog/product/cache/c9615af5e5a6f27d0b9239c1928d8610/1/-/1-wbg_1_1024x1024.jpg",
     "Name":"    PLUM SQUALANE & VITAMIN E FACE OIL",
@@ -8,14 +15,14 @@ let cartItem=[{
 }
 ,{
     "Img":"https://www.beautybebo.com/pub/media/catalog/product/cache/c9615af5e5a6f27d0b9239c1928d8610/g/v/gvhjgvyjhv.jpg",
-    "Name":"    PLUM SQUALANE & VITAMIN E FACE OIL",
+    "Name":"    VASELINE BODY LOTION 400ML ",
     "Price":310,
     "Qty":1,
     "Subtotal":310,
     "id":17
 },{
     "Img":"https://www.beautybebo.com/pub/media/catalog/product/cache/c9615af5e5a6f27d0b9239c1928d8610/7/5/75e7324plumx00000244a_2.jpg",
-    "Name":"   VASELINE BODY LOTION 400ML ",
+    "Name":"  PLUM SQUALANE & VITAMIN E FACE OIL ",
     "Price":434.00,
     "Qty":1,
     "Subtotal":433,
@@ -24,6 +31,8 @@ let cartItem=[{
 
 // write local storage code here and in place of empty array put cartITEM
 let details=JSON.parse(localStorage.getItem("cartItem")) || []
+
+localStorage.setItem("Item",JSON.stringify(details))
 let wishlistdetails=JSON.parse(localStorage.getItem("wishlistItem")) || []
 let amount=0
 let updatedSubtotal=0
@@ -94,7 +103,7 @@ cartItem.forEach((el,index)=>{
 
         // console.log(updatedQTY)
         updatedSubtotal=el.Subtotal
-        console.log(updatedSubtotal)
+        // console.log(updatedSubtotal)
 
         leftFirstRowDiv3Child3.append(subtotal)
 
@@ -158,7 +167,7 @@ cartItem.forEach((el,index)=>{
 }
 appendCartData(cartItem)
 
-console.log(amount)
+// console.log(amount)
 subtotalAmount.append(amount)
 total.append(amount)
 

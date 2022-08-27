@@ -3,94 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Checkout</title>
 </head>
-<style>
-    *{
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Roboto', sans-serif;
-    }
-    #checkoutShippingContainer{
-        width: 80%;
-        margin-left: 10%;
-        gap: 20px;    
-    }
-    #shipping_image{
-        border-bottom: 1px solid rgb(180, 180, 180);
-        /* max-width: 20px; */
-        width: 63%;
-        margin-bottom: 20px;
-    }
-    #checkboxIcon{
-        display: flex;
-        justify-content: end;
-        margin-top: none;
-        margin-right: none;width: 100%;
-      
-    }
-    #checkboxIcon>img{
-        height: 50px;
-        width: 50px;
-    }
-    #shippingDetails{
-        width: 65%;
-    }
-    #shoppingDetails{
-        border: 2px solid #dd0285 !important;
-       
-    }
-    #cartDetails{
-        display: flex;
-        gap: 30px;
-    }
-    #orderSummaryDetails{
-        border: 1px solid gray;
-        width: 35%;
-    }
-    #input_field{
-        display: flex;
-        gap: 30px;
-        border-top: 1px solid rgb(180, 180, 180);
-    }
-    #nextPage{
-        display: flex;
-        justify-content: end; 
-    }
-    #nextPage>button{
-        width: 70px;
-    }
-    #personDetails{
-        margin-left: 20px;
-        margin-bottom: 20px;
-        font-size: 18px;
-        /* font-weight: none; */
-        font-family: 'icons-blank-theme';
-        font-family: 'icons-blank-theme';
-    }
-   button{
-    margin-top: 20px;
-    height: 40px;
-    width: auto;
-    font-size: 14px;
-    background-color: #444444;
-    border: none;
-    color: #fff;
-   }
-   a{
-    text-decoration: none;
-    color: #fff;
-   }
-   #cartValue{
-    border-top: 1px solid rgb(180, 180, 180);
-    border-bottom: 1px solid rgb(180, 180, 180)
-   }
-   #cartValue>h2{
-    color: #666666;
-    cursor: pointer;
-    font-weight:lighter;
-   }
-</style>
 <body>
+    <div id="navbar">
+
+    </div>
     <div>
         <div id="checkoutShippingContainer">
             <div id="shipping_image">
@@ -115,7 +36,7 @@
                         </div>
                     </div>
                     <div>
-                        <button><a href="./account">NEW ADDRESS</a></button>
+                        <button><a href="./account" id="newAdd">NEW ADDRESS</a></button>
                     </div>
                     <div>
                         <div>
@@ -143,9 +64,11 @@
                 </div>
             </div>
         </div>
-        <div>
+    </div>
+    <div id="footer">
 
-        </div>
     </div>
 </body>
 </html>
+<script src="./script/checkout.js" type="module"></script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>></script>

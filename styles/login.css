@@ -1,0 +1,247 @@
+
+
+#login_page_box {
+    display: flex;
+
+}
+
+
+
+
+#sign_up_with {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1, auto;
+    gap: 20px;
+    background-color: #FFFFFF;
+
+}
+
+.sign_up_social {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3px 0; */
+    font-size: 14px;
+    background-color:  #3b5998;;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+}
+.sign_up_social1 {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3px 0; */
+    font-size: 14px;
+    background-color: #dd4b39;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+
+.sign_up_social>img {
+    width: 30px;
+    
+    margin-right: 18px;
+}
+.sign_up_social1>img {
+    width: 30px;
+    
+    margin-right: 18px;
+}
+
+/* .hr_line {
+    width: 100%;
+    top: 20px;
+    border: none;
+    height: 2px;
+    margin-top: 10px;
+    color: #f2f2f2;
+} */
+
+#signup-form-div {
+    width: 550px;
+    padding: 32px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 35px 30px;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    border:0.5px solid #999;
+    background-color: #ffff;
+    margin-bottom: 80px;
+    margin-right: 15px;
+}
+
+#new_costomer {
+    width: 550px;
+    height:440px;
+    padding: 32px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 35px 30px;
+    /* background-color: #FFFFFF; */
+    border:0.5px solid #999;
+    margin-left: 15px;
+    border-radius: 10px;
+    
+}
+
+#new_costomer h3 {
+    /* text-align: center; */
+    margin-bottom: 30px;
+    /* background-color: #FFFFFF; */
+    /* margin-top: 40px; */
+    color: #222;
+    display: block;
+    font-weight: 700;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#signup-form-div> h4{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #FFFFFF; 
+     margin-top: 40px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #666666;
+}
+#signup-form-div> h3 {
+ 
+      /* text-align: center; */
+      margin-bottom: 30px;
+    /* background-color: #FFFFFF; */
+    /* margin-top: 40px; */
+    color: #222;
+    display: block;
+    font-weight: 700;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+   
+}
+
+
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ 
+    border:0.5px solid #999;
+    /* border-radius: 5px; */
+    background-color: #FFFFFF;
+}
+
+
+#new_costomer_reg {
+    width: 60%;
+    height: 40px;
+    display: block;
+    /* margin: auto; */
+    border:none ! important;
+
+    cursor: pointer;
+    background-color: #444;
+    color:#FFFFFF !important;
+    /* border:0.5px solid #999; */
+    line-height:35px;
+    font-size: 100% !important;
+    font-weight: 400;
+
+}
+#new_costomer>p{
+    display:block;
+    margin-block-start:1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:Roboto;
+    font-size:14px;
+    color:#666666;
+    line-height:1.66;
+    margin-bottom:40px;
+}
+#p{
+    display:block;
+    margin-block-start:1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:Roboto;
+    font-size:14px;
+    color:#666666;
+    line-height:1.66;
+    margin-bottom:40px
+
+}
+#submit{
+    width: 25%;
+    height: 40px;
+    display: block;
+    /* margin: auto; */
+    cursor: pointer;
+    background-color: #444;
+
+    /* border:0.5px solid #999; */
+   
+    font-weight: 600px;
+    font-family: 'Roboto',sans-serif;
+  
+
+    color:#FFFFFF !important;
+    /* border:0.5px solid #999; */
+    line-height:35px;
+    font-size: 100% !important;
+    font-weight: 400;
+
+
+}
+#new_costomer_reg:hover {
+    background-color: #dd0285;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+   
+
+}
+
+
+#submit:hover{
+    background-color: #dd0285;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+
+}
+
+.sign_up_social:hover {
+  background-color: rgb(12, 12, 117);
+    cursor: pointer;
+
+}
+.sign_up_social1:hover {
+  background-color:#df240b;
+    cursor: pointer;
+
+}
+
+.int_txt {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.t_d {
+    color: #333333;
+    font-weight: 500;
+}
+

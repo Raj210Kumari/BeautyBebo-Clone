@@ -1,0 +1,119 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#checkoutShippingContainer{
+    width: 80%;
+    margin-left: 10%;
+    gap: 20px;    
+}
+#shipping_image{
+    border-bottom: 1px solid rgb(180, 180, 180);
+    /* max-width: 20px; */
+    width: 63%;
+    margin-bottom: 20px;
+}
+#checkboxIcon{
+    display: flex;
+    justify-content: end;
+    margin-top: none;
+    margin-right: none;width: 100%;
+  
+}
+#checkboxIcon>img{
+    height: 50px;
+    width: 50px;
+}
+#shippingDetails{
+    width: 65%;
+}
+#shoppingDetails{
+    border: 2px solid #dd0285 !important;
+   
+}
+#cartDetails{
+    display: flex;
+    gap: 70px;
+}
+#orderSummaryDetails{
+    /* border: 1px solid gray; */
+    width: 35%;
+}
+#input_field{
+    display: flex;
+    gap: 30px;
+    border-top: 1px solid rgb(180, 180, 180);
+}
+#nextPage{
+    display: flex;
+    justify-content: end; 
+}
+#nextPage>button{
+    width: 70px;
+}
+#personDetails{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    /* font-weight: none; */
+    font-family: 'icons-blank-theme';
+    font-family: 'icons-blank-theme';
+}
+button{
+margin-top: 20px;
+height: 40px;
+width: auto;
+font-size: 14px;
+background-color: #444444;
+border: none;
+color: #fff;
+}
+a{
+text-decoration: none;
+color: #fff;
+}
+#cartValue{
+border-top: 1px solid rgb(180, 180, 180);
+border-bottom: 1px solid rgb(180, 180, 180)
+}
+#cartValue>h2{
+color: #666666;
+cursor: pointer;
+font-weight:lighter;
+}
+.checkoutItemDiv{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    gap: 5px;
+}
+.checkoutItemDiv>div>img{
+    height: 120px;
+    width: 120px;
+}
+.desDiv{
+    width: 53%;
+}
+button{
+    width: 30%;
+            height: 40px;
+            display: block;
+            /* margin: auto; */
+            border:none ! important;
+
+            cursor: pointer;
+            background-color: #444;
+            color:#FFFFFF !important;
+            /* border:0.5px solid #999; */
+            line-height:35px;
+            font-size: 100% !important;
+            font-weight: 400;
+}
+button:hover{
+    background-color: #dd0285;
+            color:white;
+            font-family: 'Roboto',sans-serif;
+            cursor: pointer;
+           
+}

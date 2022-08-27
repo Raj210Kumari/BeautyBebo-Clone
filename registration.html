@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title> Create New Customer Account Beauty Bebo</title>
     <style>
-        * {
+        /* * {
             padding: 0;
             margin: 0;
-            background-color:white;
+         background-color:white; 
             font-family: Arial, Helvetica, sans-serif;
-        }
+        } */
 
       
 
@@ -193,25 +195,29 @@
 </head>
 
 <body>
-    <div id="reg_page_navbar" onclick="myhome()">
+    <div id="navbar">
+
+    </div>
+    <div>
+        <div id="reg_page_navbar" onclick="myhome()">
+            
+        </div>
+        <h3 id="h3">CREATE NEW CUSTOMER ACCOUNT</h3>
+
         
-    </div>
-    <h3 id="h3">CREATE NEW CUSTOMER ACCOUNT</h3>
-
-    
-    <div id="sign_up_with">
-        <div class="sign_up_social"><img
-                src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-logo-facebook-icon-png-image_3566127.png"
-                alt="error"> Facebook</div>
-        <div class="sign_up_social1"><img
-                src="https://icon-library.com/images/download-google-icon/download-google-icon-25.jpg" alt="error">
-            Google</div>
-    </div>
-    <h3 id="h31">-- OR --</h3>
+        <div id="sign_up_with">
+            <div class="sign_up_social"><img
+                    src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-logo-facebook-icon-png-image_3566127.png"
+                    alt="error"> Facebook</div>
+            <div class="sign_up_social1"><img
+                    src="https://icon-library.com/images/download-google-icon/download-google-icon-25.jpg" alt="error">
+                Google</div>
+        </div>
+        <h3 id="h31">-- OR --</h3>
 
 
 
-    <div id="signup-form-div">
+        <div id="signup-form-div">
         <h3>PERSONAL INFORMATION</h3>
 
         <hr class="hr_line">
@@ -241,6 +247,10 @@
         <button id="submit">Create An Account</button>
        
 
+        </div>
+        <div id="footer">
+
+        </div>
     </div>
 
 
@@ -249,7 +259,14 @@
 </html>
 
 
-<script>
+<script type="module">
+    import {navbar,cartpopUp} from "../components/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar()
+
+    import{footer} from "../components/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+    cartpopUp()
+
     document.querySelector("#submit").addEventListener("click", mySignup);
     let dataArr = JSON.parse(localStorage.getItem("userData")) || [];
 
@@ -314,3 +331,4 @@
         window.location.href = "./navbar.html"
     }
 </script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>></script>

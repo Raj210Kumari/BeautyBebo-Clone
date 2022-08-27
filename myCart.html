@@ -3,78 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/myCart.css">
+    <link rel="stylesheet" href="./Beauty/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>View Cart</title>
 </head>
-<style>
-    #cartContainer{
-        
-        display: flex;
-        width: 80%;
-        margin-left: 10%;
-    }
-    #leftContainer{
-        /* background-color: aqua; */
-        width: 70%;
-        padding-right: 20px;
-    }
-    #rightContainer{
-        background-color: grgb(180, 180, 180);
-        border: 2px solid rgb(174, 172, 172);
-        width: 30%;
-        text-align: center;
-    }
-    #tableTag{
-        border-bottom: 2px solid rgb(174, 172, 172);
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-    }
-    span{
-        margin-left: 30px;
-    }
-    .leftFirstRow{
-        display: flex;
-        margin-top: 20px;
-        padding-bottom: 10px;
-        border-bottom: 0.5px solid rgb(180, 180, 180);
-    }
-    .leftFirstRowDiv1{
-        width: 20%;
-        border: 0.5px solid rgb(180, 180, 180);
-        
-    }
-    .leftFirstRowDiv2{
-        width: 55%;
-        margin-left: 20px;
-    }
-    .leftFirstRowDiv3{
-        display: flex;
-        width: 30%;
-        gap: 50px;
-    }
-    .leftSecondRow{
-        margin-top:10px ;
-    }
-    .leftFirstRowDiv3Child3{
-        margin-left: 20px;
-    }
-    select{
-        margin-top: 17px;
-    }
-    #bottomDiv{
-        display: flex;
-        margin-top: 20px;
-        justify-content: space-between;
-    }
-    button{
-        margin-top: 10px;
-    }
-    .leftFirstRowDiv3Child2>input{
-        margin-top: 16px;
-        width: 20px;
-    }
-</style>
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="cartContainer">
         <div id="leftContainer">
             <div id="tableTag">
@@ -102,7 +39,7 @@
 
             </div>
             <div id="bottomDiv">
-                <button><a href="./index.html">CONTINUE SHOPPING</a></button>
+                <button id="ContShopping"><a href="./index.html">CONTINUE SHOPPING</a></button>
                 <button onclick="updateQTY()" id="updateQtyValue">UPDATE SHOPPING CART</a></button>
             </div>
         </div>
@@ -169,11 +106,15 @@
                 </div>
                 <button>APPLY DISCOUNT</button>
             </div>
-            <div>
-                <button><a href="./checkout.html">PROCEED TO CHECKOUT</a></button>
+            <div id="proToCheckDiv">
+                <button id="proToCheck"><a href="./checkout.html">PROCEED TO CHECKOUT</a></button>
             </div>
         </div>
     </div>
+    <div id="footer">
+
+    </div>
 </body>
 </html>
-<script src="./myCart.js"></script>
+<script src="./script/myCart.js" type="module"></script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>

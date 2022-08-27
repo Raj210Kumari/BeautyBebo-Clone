@@ -1,0 +1,106 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#paymentContainer{
+    width: 80%;
+    margin-left: 10%;
+    gap: 20px;  
+}
+#payment_img{
+    /* border-bottom: 1px solid rgb(180, 180, 180); */
+    width: 63%;
+    margin-bottom: 40px;
+}
+#paymentDetails{
+    width: 65%;
+}
+#orderDetails{
+    width: 35%;
+    /* border: 1px solid gray; */
+}
+#payment_details{
+    display: flex;
+    gap: 70px;
+}
+#input_field{
+    
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+#input_field>div{
+    display: flex;
+    gap: 30px;
+    /* border-top: 1px solid rgb(180, 180, 180); */
+}
+#input_field>div>button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 500px;
+}
+#ord_summ>div{
+    border-bottom: 1px solid rgb(180, 180, 180);
+    
+}
+#ord_summ,#ship_to,#ship_meth{
+    margin-bottom: 100px;
+}
+#underline{
+    border-bottom: 1px solid rgb(180, 180, 180)
+}
+
+#ord_detail{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+#cartValue{
+    /* border-top: 1px solid rgb(180, 180, 180); */
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(180, 180, 180)
+    }
+    #cartValue>h2{
+    color: #666666;
+    cursor: pointer;
+    font-weight:lighter;
+    font-size: 22px;
+    }
+
+/* append div css */
+.checkoutItemDiv{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    gap: 5px;
+}
+.checkoutItemDiv>div>img{
+    height: 120px;
+    width: 120px;
+}
+.desDiv{
+    width: 53%;
+}
+button{
+    width: 30%;
+            height: 40px;
+            display: block;
+            /* margin: auto; */
+            border:none ! important;
+
+            cursor: pointer;
+            background-color: #444;
+            color:#FFFFFF !important;
+            /* border:0.5px solid #999; */
+            line-height:35px;
+            font-size: 100% !important;
+            font-weight: 400;
+}
+button:hover{
+    background-color: #dd0285;
+            color:white;
+            font-family: 'Roboto',sans-serif;
+            cursor: pointer;
+           
+}
