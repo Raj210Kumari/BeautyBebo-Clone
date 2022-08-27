@@ -24,7 +24,7 @@
                 <input id="header_search_input" type="text"name ="q" onfocus="if(this.value =='Enter Your Search...') this.value ='';" onblur ="if(this.value =='')this.value='Enter Your Search...';"
                 value ="Enter Your Search..." class="input-text input-searchbox" maxlength="128" role="combobox" aria-haspopup="false" aria-expanded="true"
                 aria-autocomplete="both" autocomplete="0ff">
-                <i class='fa-solid fa-magnifying-glass' id="searchicon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEOYAC7tc-hlCIvODyfP-XEY3wG-aNUsOYQ&usqp=CAU" alt=""></i>
+                <i class='fa-solid fa-magnifying-glass' id="searchicon"></i>
              
              
     
@@ -33,20 +33,17 @@
             <div id="box_account_cart">
                 <div id="account">
                     
-                    <p id="user_account"><select name="current_user" id="current_user">
-                    <option class="dash_options" value="">👤Account </option>
-                     <ul>
-                        <li><a href="login.html">Login</a>
-                        <li><a href="registration.html">Register </a>
-                      
-                       
-                    </ul>
-                    <option class="dash_options" value="Login">
-                        <a href="">Login</a></option>
-                    <option class="dash_options" value="Register">
-                        <a href="">Register</a></option>
-                        
-                  </select></p>
+                    <div id="accountSelection">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="right-menu">
+                            
+                            <ul>
+                                <li><a href="">MY ACCOUNT</a></li>
+                               
+                            </ul>
+
+                        </div>
+                      </div>
                 </div>
     
                 <div id="cart">
@@ -366,3 +363,4 @@
   
 </body>
 </html>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>
