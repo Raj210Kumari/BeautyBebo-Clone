@@ -185,7 +185,7 @@
 
 #header_navigation>ul>li>a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .heading1 {
@@ -231,8 +231,33 @@
 }
 #searchicon >img{
     width:25px;
+}
+
+.menu-button{
+    background-color:transparent;
+    /* color:white; */
+    padding:16px;
+    font-size: 16px;
+    cursor:pointer;
+    border:1px solid #fff;
+ 
+}
+.menu-button ul li{
+    display:none;
+}
+.right-menu{
+    position:relative;
+    display:inline-block;
    
     
-    
+
+
+}
+.right-menu ul{
+    list-style-type: none;
+}
+.right-menu ul li a{
+    text-decoration: none;
+    color:black;
    
 }
