@@ -1,0 +1,39 @@
+   /* search bar css */
+   body{
+    padding:0;
+    margin:0;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    
+}
+#searchbarDiv{
+    margin-top: 20px;
+}
+#div1{
+    text-align: center;
+    margin-top: 110px;
+}
+#div2{
+    text-align: center;
+}
+/* img{
+    height: 280px;
+    width: 500px;
+} */
+input{
+    height: 35px;
+    width: 550px;
+    border-radius: 15px;
+}
+#results{
+    /* width: 550px;
+    height: 550px; */
+    margin: auto;  
+    border-top: none;
+    overflow: hidden;
+    background-color: azure;
+}
+p{
+    color: rgb(0, 0, 0);
+}
