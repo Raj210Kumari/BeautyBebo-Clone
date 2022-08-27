@@ -5,12 +5,114 @@
   --font_light_color: #707070;
 }
 
+.mainImg {
+  width: 200px;
+}
+
+.ratingImg {
+  width: 80px;
+}
+.off {
+  color: #66801e ;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+.name {
+  font-weight: 500;
+}
+
+.name:hover {
+  color: #dd0285;
+}
+
+.price {
+  color: #dd0285 ;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+s {
+  font-size: 15px;
+}
+
+.priceReal {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.basket {
+  background-color: #dd0285 ;
+  display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-left: 62px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+
+
+.basketImg {
+  width: 16px;
+  margin-left: 7px;
+  margin-bottom: -2px;
+}
+
+.addText {
+  font-size: 14px;
+  color: white;
+  
+}
+
+
+
+
+.addText:hover {
+  background-color: #dd0285
+}
+
+.like_btn {
+  width: 30px;
+   
+}
+
+.products_div {
+  width: 23%;
+  border: 1px solid cyan;
+  border-width: thin;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+
+}
+
+.products_div:hover {
+
+  cursor: pointer;
+}
+
+.homepage_first_half_module3_products_container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin-left: 2px;
+  
 }
+
 
 
 .home_page_first_half_container {
@@ -242,7 +344,8 @@
 }
 
 .homepage_slider_container_ks figure > img {
-  width: 20%;
+  width: 886px;
+  height: 20%;
   /* margin:5px; */
   /* padding: 2px; */
   float: left;
@@ -282,6 +385,11 @@
   width: 100%;
 }
 
+
+.homepage_first_half_module2_container > img:hover {
+   cursor: pointer;
+
+}
 /* module 2 css ends */
 
 /* module 3 css starts */
@@ -561,7 +669,10 @@
 }
 
 .homepage_first_half_module5_products_container img {
-  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-left: 45px;
+  justify-content: center;
 }
 
 #productCard_ks {
@@ -584,6 +695,12 @@
 
 .home_page_first_half_module_6 > img {
   width: 100%;
+
+}
+
+
+.home_page_first_half_module_6 > img:hover {
+  cursor: pointer;
 }
 /* module 6 ends */
 
@@ -647,6 +764,7 @@
   /* position: static; */
   margin: 1%;
   margin-top: 2%;
+  font-size: 14px;
   /* font-weight: 500; */
 }
 .price b {
@@ -694,6 +812,11 @@
   height: 240px;
   margin-right: 5%;
   margin-left: 1%;
+}
+
+
+#advertisement img:hover {
+  cursor: pointer;
 }
 .summaryheading {
   font-weight: 600;

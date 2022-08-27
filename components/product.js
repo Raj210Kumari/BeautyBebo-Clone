@@ -29,4 +29,4 @@ function product(url,name,oldPrice,price,discount){
 }
 
 
-export default product;
+//export default product;
