@@ -1,12 +1,4 @@
    /* search bar css */
-   body{
-    padding:0;
-    margin:0;
-    background-color: black;
-    background-size: cover;
-    height: 100vh;
-    
-}
 #searchbarDiv{
     margin-top: 20px;
 }
