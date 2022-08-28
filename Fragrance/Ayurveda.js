@@ -1,5 +1,4 @@
 
-
 const getData = async ( url )=>{
     try{
         let response = await fetch( url );
