@@ -38,7 +38,7 @@ let user = JSON.parse(localStorage.getItem("userData"))
         } else {
             localStorage.setItem("loginData", JSON.stringify(current_user));
             alert("Login Success....!")
-            window.location.href = "";
+            window.location.href = "./index.html";
         }
 
 
