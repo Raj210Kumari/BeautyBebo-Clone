@@ -287,7 +287,7 @@ let navbar=()=>{
                      
                     </div>
                 </li>
-                <li><a href="">AYURVEDA</a>
+                <li><a href="./Fragrance/Ayurveda.html">AYURVEDA</a>
                     <div>
                         <ul>
                             <h3>NATURAL SKIN CARE</h3>

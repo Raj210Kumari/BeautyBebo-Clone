@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./comman.css">
+    <link rel="stylesheet" href="../Beauty/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="fra">
         Fragrance
     </div>
@@ -39,7 +44,9 @@
         Get yourself your best perfume online, all from pronounced brands. Try out a unique but best fragrance that will define you and get an exotic or natural smell that will leave you confident throughout your day.
         
         Deodorants and Roll on</p></div>
+        <div id="footer">
 
+        </div>
     
 </body>
 </html>
@@ -51,4 +58,12 @@ import {getData, appendData} from "./fragrance.js"
 let resp = await getData("./fragrance.json");
 console.log("respfrommodule", resp);
 appendData(resp, main)
+
 </script>
+<script type="module"> 
+import {navbar} from "../components/navbar.js"
+document.querySelector("#navbar").innerHTML=navbar()
+
+import{footer} from "../components/footer.js"
+document.getElementById("footer").innerHTML=footer()</script>
+<script src="https://kit.fontawesome.com/378827cca1.js" crossorigin="anonymous"></script>
