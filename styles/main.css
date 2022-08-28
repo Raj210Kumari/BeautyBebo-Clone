@@ -44,7 +44,7 @@ s {
 }
 
 
-.basket {
+#basket {
   background-color: #dd0285 ;
   display: flex;
     justify-content: space-between;
@@ -104,7 +104,7 @@ s {
 }
 
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -114,11 +114,11 @@ s {
   font-weight: 300;
   margin-left: 2px;
   
-}
+} */
 
 
 
-}
+
 /* .home_page_first_half_body {
   padding: 0;
   margin: 0;
@@ -709,6 +709,7 @@ s {
   color: #666666;
 
   overflow: auto;
+  text-align: center;
 }
 .homepage_first_half_module5_products_container > div {
   width: 100%;

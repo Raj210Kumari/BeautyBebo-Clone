@@ -1,3 +1,33 @@
+import {navbar,cartpopUp} from "../components/navbar.js"
+document.querySelector("#navbar").innerHTML=navbar()
+
+import{footer} from "../components/footer.js"
+document.getElementById("footer").innerHTML=footer()
+cartpopUp()
+
+
+function dataObj(img,n,p) {
+    this.image=img;
+    this.name=n;
+    this.price=p;
+}
+ 
+ 
+document.querySelector("#basket").onclick=function() {
+    
+let img=document.querySelector(".mainImg").src
+let name=document.querySelector(".name").innerHTML;
+let price=document.querySelector(".priceReal").innerHTML;
+   let item=new dataObj(img,name,price)
+   console.log(item)
+
+   let data=JSON.parse(localStorage.getItem(item)) || []
+   data.push(item)
+   localStorage.setItem("cartItem",JSON.stringify(data))
+   console.log("inside")
+}
+
+
     //https://swapi.dev/api/people/?search=${query}
     let id;
 
@@ -26,7 +56,7 @@
     
     
     // search bar  मध्ये item append करण्यासाठी
-    array =[]
+    let array =[]
     function appendItem(data){
         let items_div = document.getElementById("results");
         items_div.innerHTML = null;
@@ -91,3 +121,11 @@
     
     },delay);
     }
+
+
+
+
+
+
+
+

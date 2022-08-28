@@ -8,7 +8,7 @@ let navbar=()=>{
     
         <div id="middle_head">
             <div id="logo">
-                <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="">
+                <a href="./index.html"><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></a>
             </div>
     
             <div id="header_search">
@@ -17,6 +17,7 @@ let navbar=()=>{
                 value ="Enter Your Search..." class="input-text input-searchbox" maxlength="128" role="combobox" aria-haspopup="false" aria-expanded="true"
                 aria-autocomplete="both" autocomplete="0ff">
                 <i class='fa-solid fa-magnifying-glass' id="searchicon"></i>
+                <div id="results"></div>
              
              
     
